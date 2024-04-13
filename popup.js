@@ -3,15 +3,26 @@ let imIn = document.querySelector(".imIn");
 let imNotIn = document.querySelector(".imNotIn");
 let music = document.querySelector(".music");
 let quitSite = document.querySelector(".quitSite");
+let firstTime = JSON.parse(sessionStorage.getItem("firstTime")) || true;
 
-allElements.forEach(e=>{
-    if(!e.classList.contains('music')&&!e.classList.contains('doYouWantMusic') 
-    &&!e.classList.contains('question')&&!e.classList.contains('answerButtons')
-    &&!e.classList.contains('imIn')&&!e.classList.contains('imNotIn')&&!e.classList.contains('quitSite')) {
-        e.classList.add('blurOutsidePopup');
-        e.style.pointerEvents = "none";
-    }
-});
+if (!sessionStorage.getItem("firstTime")){
+    allElements.forEach(e=>{
+        if(!e.classList.contains('music')&&!e.classList.contains('doYouWantMusic') 
+        &&!e.classList.contains('question')&&!e.classList.contains('answerButtons')
+        &&!e.classList.contains('imIn')&&!e.classList.contains('imNotIn')&&!e.classList.contains('quitSite')) {
+            e.classList.add('blurOutsidePopup');
+            e.style.pointerEvents = "none";
+        }
+    });
+    music.style.display="flex";
+    firstTime=false;
+    sessionStorage.setItem("firstTime", JSON.stringify(firstTime));
+
+}
+else {
+    music.style.display="none";
+}
+
 
 imIn.addEventListener("click",function(){
     allElements.forEach(e=>{
