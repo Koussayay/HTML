@@ -1,0 +1,72 @@
+.circle1 {
+    background-color: white;
+    border-radius: 50%;
+    width:20.8vw ;
+    height: 20.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "monserrat";
+    font-size: 3.33vw;
+    font-weight: 600;
+    animation: rotate1 10s linear infinite;
+}
+.circle2 {
+    background-color: #514F4C;
+    border-radius: 50%;
+    width:20.8vw ;
+    height: 20.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "monserrat";
+    font-size: 3.33vw;
+    font-weight: 600;
+    animation: rotate2 10s linear infinite;
+}
+.circle3 {
+    background-color: #FFB547;
+    border-radius: 50%;
+    width:20.8vw ;
+    height: 20.8vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "monserrat";
+    font-size: 3.33vw;
+    font-weight: 600;
+    animation: rotate3 10s linear infinite;
+}
+.turningCircles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 20vw;
+}
+@keyframes rotate1 {
+    from {
+        transform: rotate(45deg); /* Rotate from 0 degrees */
+    }
+    to {
+        transform: rotate(405deg); /* Rotate to 360 degrees (full rotation) */
+    }
+}
+@keyframes rotate2 {
+    from {
+        transform: rotate(0deg); /* Rotate from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg); /* Rotate to 360 degrees (full rotation) */
+    }
+}
+@keyframes rotate3 {
+    from {
+        transform: rotate(80deg); /* Rotate from 0 degrees */
+    }
+    to {
+        transform: rotate(440deg); /* Rotate to 360 degrees (full rotation) */
+    }
+}

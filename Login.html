@@ -1,0 +1,150 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+  <div class="nav">
+    <div class="logo">Musicfy.</div>
+    <div class="links">
+        <div class="navLink"><a href="projet_final.html">Home</a></div>
+        <div class="navLink"><a href="artists2.html">Artists</a></div>
+        <div class="navLink"><a href="Packs.html">Packs</a></div>
+        <div class="navLink"><a href="Contact.html">Contact</a></div>
+        <div class="navLink"><a id="LoginNavLink" href="Login.html">Account</a></div>
+    </div>
+    <button class="signIn">Sign in</button>
+</div>
+    <section class="user">
+        <div class="user_options-container">
+          <div class="user_options-text">
+                <div class="user_options-unregistered">
+                <h2 class="user_unregistered-title">Don't have an account?</h2>
+                <p class="user_unregistered-text">Create now!</p>
+                <button class="user_unregistered-signup" id="signup-button">Sign up</button>
+                </div>
+        
+                <div class="user_options-registered">
+                <h2 class="user_registered-title">Already have a account!</h2>
+                <p class="user_registered-text">Get started..</p>
+                <button class="user_registered-login" id="login-button">Login</button>
+                </div>
+          </div>
+          
+          <div class="user_options-forms" id="user_options-forms">
+            <div class="user_forms-login">
+              <h2 class="forms_title">Login</h2>
+              <form class="forms_form">
+                <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                    <input type="email" placeholder="Email" class="forms_field-input" id="loginEmail" required autofocus />
+                  </div>
+                  <div class="forms_field">
+                    <input type="password" placeholder="Password" class="forms_field-input" id="loginPassword" required />
+                  </div>
+                </fieldset>
+                <div class="forms_buttons">
+                  <button type="button" class="forms_buttons-forgot">Forgot password?</button>
+                  <button id="loginButton"  class="forms_buttons-action">Log in</button>
+                </div>
+              </form>
+            </div>
+            <div class="user_forms-signup">
+              <h2 class="forms_title">Sign Up</h2>
+              <form class="forms_form">
+                <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                    <input type="text" placeholder="Full Name" class="forms_field-input" id="signUpName" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="email" placeholder="Email" class="forms_field-input" id="signUpEmail" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="password" placeholder="Password" class="forms_field-input" id="signUpPassword" required />
+                  </div>
+                </fieldset>
+                <div class="forms_buttons">
+                  <button id="signUpButton" class="forms_buttons-action">Sign up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="music">
+        <div class="doYouWantMusic">
+            <img class="quitSite" src="quit.png">
+            <div class="question">Enter Admin password</div>
+            <form class="answerButtons">
+                <label for="adminPassword"></label>
+                <input type="password" placeholder="password" class="adminPassword" id="adminPassword" required>
+                <button type="button" class="imNotIn">Submit</button>
+            </form>
+        </div>
+    </div>
+      <div class="manageAccounts">
+        <button class="manageAccountsButton">MANAGE ACCOUNTS</button>
+        <div id="container">
+          <div id="input-container">
+            <input type="email" id="email-input" placeholder="email" class="crudInput" />
+            <input type="text" id="password-input" placeholder="password" class="crudInput"/>
+            <button id="update-btn">update</button>
+            <button id="cancel-btn">Cancel</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>EMAIL</th>
+                <th>PASSWORD</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="table-body">
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="backUpLink">
+            <div class="sendMeBackUp">SEND ME BACK UP</div>
+            <img src="upArrow.png">
+        </div>
+        <div class="restOfFooter">
+            <div class="footerLinks">
+                <a href="projet_final.html">HOME</a>
+                <a href="artists2.html">ARTISTS</a>
+                <a href="Packs.html">PACKS</a>   
+                <a href="Contact.html">CONTACT</a>
+                <a href="Login.html">ACCOUNT</a>
+            </div>
+            <div class="bottomLinks">
+                <div class="leftBottomLinks">
+                    <div class="privacyTerms">
+                        <a href="#">PRIVACY</a>
+                        <a href="#">TERMS AND CONDITIONS</a>
+                    </div>
+                    <div class="allRightsReserved">
+                        @Musicfy STREAMING SERVICE. ALL RIGHTS RESERVED
+                    </div>
+                </div>
+                <div class="bottomLinksRight">
+                    <img src="facebook.png">
+                    <img src="instagram.png">
+                    <img src="linkedin.png">
+                </div>
+            </div>
+        </div>
+    </div>
+   
+      
+</body>
+<script src="Login.js"></script>
+<script src="nav.js"></script>
+<script src="footer.js"></script>
+</html>

@@ -1,0 +1,58 @@
+.description {
+    height: 95vw;
+    position: relative;
+}   
+.forallthedogs{
+    position: absolute;
+    width: 50vw;
+    height: 45vw;
+    left:0 ;
+    top: 10%;
+    filter: drop-shadow(0vw 1vw 1vw rgba(0, 0, 0, 0.25));
+
+
+}
+.explosion {
+    position: absolute;
+    width: 65vw;
+    height: 40vw;
+    right: 0;
+    filter: drop-shadow(0vw 1vw 1vw rgba(0, 0, 0, 0.25));
+
+}
+.weDontTrust{
+    position: absolute;
+    width: 45vw;
+    height: 45vw;
+    right: 1%;
+    top: 42.1%;
+    filter: drop-shadow(0vw 1vw 1vw rgba(0, 0, 0, 0.25));
+
+}
+.gutsCover {
+    position: absolute;
+    width: 52vw;
+    height: 49vw;
+    left: 5%;
+    top: 45%;
+    filter: drop-shadow(0vw 1vw 1vw rgba(0, 0, 0, 0.25));
+
+}
+    .blankCanvas {
+        position: absolute;
+        width: 70vw;
+        height: 48vw;
+        background-color: white;
+        top: 25%;
+        left: 15%;
+        box-shadow: drop-shadow(1vw 1vw 4vw 5vw rgba(0, 0, 0, 0.5));
+    }
+    .blankCanvas p {
+        color: black;
+        font-family: "monserrat";
+        font-size: 2.5vw;
+        font-weight: 500;
+        margin-left: 3vw;
+        margin-top: 7vw;
+        line-height: 3.8vw;
+    }

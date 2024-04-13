@@ -1,0 +1,190 @@
+@font-face {
+    font-family: monserrat;
+    src: url(Montserrat-VariableFont_wght.ttf);}
+@font-face {
+        font-family: nico;
+        src: url(NicoMoji-Regular.ttf);}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+  background-color: black;
+}
+
+.ourArtists {
+    font-family: monserrat;
+    font-size: 4vw;
+    color: white;
+    font-weight: 700;
+    margin-top: 20vw;
+    margin-left: 5vw;
+    position: relative;
+}
+
+.ourArtists img {
+    width: 12vw;
+    position: absolute;
+    top: -30%;
+    left: -7%;
+}
+
+.gridBorder{
+    margin-top: 5vw;
+    border-top: 2px solid white;
+}
+
+.artistGrid {
+    margin-top: 10vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 3vw;
+    margin-left: 5vw;
+}
+
+.artistContainer {
+    margin: 0;
+    width: 25vw;
+    height: 30vw;
+    overflow: hidden;
+    transition: border-radius 0.3s;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#jcoleContainer {
+    background-image: url(GQ-JCole-061820.webp);
+}
+#drakeContainer {
+    background-image: url(drakeArtist.jpg);
+}
+#oliviaContainer {
+    background-image: url(oliviaVertical.jpg);
+}
+#travisContainer {
+    background-image: url(travis-scott-gq-cover-september-2020-a.png);
+}
+#weekndContainer {
+    background-image: url(weekndArtist.webp);
+}
+#futureContainer {
+    background-image: url(GQ0522_Future_13.webp);
+}
+#fletcherContainer {
+    background-image: url(fletcher.jpg);
+}
+#kendrickContainer {
+    background-image: url(Kendrick-Lamar-Mr-Morale-and-the-Big-Steppers.webp);
+}
+#centralContainer {
+    background-image: url(b6ec537c19cebffd4856f110881e66e1.jpg);
+}
+.loopingArtistsName {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: top;
+    column-gap: 2vw;
+    -webkit-animation: loop 25s infinite linear;
+    animation: loop 25s infinite linear;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+@keyframes loop {
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+  .artistName {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    font-family: 'monserrat';
+    font-size: 4vw;
+    font-weight: 600;
+    color: white;
+  }
+
+  .artistWithName p {
+    margin-top: 2vw;
+    font-family: 'monserrat';
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+  }
+  .defyLabels {
+    margin-top: 30vw;
+    margin-bottom: 30vw;
+    text-align: center;
+    font-family: 'monserrat';
+    font-size: 9vw;
+    font-weight: 900;
+    letter-spacing: 2vw;
+    color: white;
+  }
+
+  .defyLabels::after {
+    content: "|";
+    display: inline;
+    animation: blinking 1s infinite;
+  }
+  @keyframes blinking {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@keyframes changeText {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.textChanged {
+    animation: changeText 2s forwards;
+  } 
+
+.aboutUsDescription {
+    position: relative;
+    margin-bottom: 85vw;
+}
+
+.aboutUsImage1 {
+    position: absolute;
+    width: 65vw;
+    right: 0;
+}
+
+.aboutUsText {
+    background-color: #ffb547e2;
+    height: 55vw;
+    width: 55vw;
+    position: absolute;
+    top: 5vw;
+    z-index: 1;
+}
+.aboutUsTextTitle{
+    margin-top: 4vw;
+    margin-left: 2vw;
+    font-family: 'monserrat';
+    font-size: 4vw;
+    font-weight: 600;
+    color: white;
+}
+.aboutUsTextPara {
+    margin-top: 4vw;
+    margin-left: 2vw;
+    font-family: 'monserrat';
+    font-size: 2vw;
+    font-weight: 400;
+    color: white;
+}

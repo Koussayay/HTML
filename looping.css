@@ -1,0 +1,81 @@
+.loopingList{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.discount {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-bottom: 1px white solid;
+    border-top: 1px white solid;
+}
+.discount50{
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    font-family: 'monserrat';
+    font-size: 2vw;
+    font-weight: 600;
+    color: white;
+ }
+.loopingItem{
+    display: flex;
+    align-items: top;
+    column-gap: 2vw;
+}
+.loopingList {
+    display: flex;
+    align-items: top;
+    column-gap: 2vw;
+    -webkit-animation: loop 20s infinite linear;
+    animation: loop 60s infinite linear;
+}
+@keyframes loop {
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+
+.musicClip {
+    background-color: #FFB547;
+    background-image: image();
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.loopingArtistName {
+    white-space: nowrap;
+    display: flex;
+    font-family: 'nico';
+    font-size: 10vw;
+    color: black;
+}
+.loopingSongName {
+    white-space: nowrap;
+    display: flex;
+    font-family: "monserrat";
+    font-size: 10vw;
+    font-weight: 900;
+    color: black;
+}
+
+.clipItem {
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    display: flex;
+    align-items: center;
+    align-items: top;
+    column-gap: 2vw;
+}
+.loopingClipList{
+    position: relative;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    align-items: top;
+    column-gap: 2vw;
+    -webkit-animation: loop 20s infinite linear;
+    animation: loop 20s infinite linear;
+}
+body::-webkit-scrollbar {
+    display: none;
+}

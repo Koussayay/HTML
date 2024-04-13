@@ -1,0 +1,86 @@
+.backUpLink {
+    border-top: 0.5vw #514F4C solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vw;
+}
+.backUpLink img {
+    width:3vw ;
+    height:3vw ;
+    animation: bounce 2s infinite;
+}
+@keyframes bounce {
+    0% {
+        transform: translateY(1vw); 
+      }
+      50% {
+        transform: translateY(-1vw);
+      }
+      100% {
+        transform: translateY(1vw); 
+      }
+}
+.footerLinks {
+    margin-left: 2vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25vw;
+}
+.footerLinks a{
+    font-family: "monserrat";
+    font-size: 1.66vw;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    width: fit-content;
+    
+}
+.bottomLinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+.restOfFooter {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.privacyTerms a{
+    font-family: "monserrat";
+    font-size: 0.75vw;
+    font-weight: 400    ;
+    color: white;
+    text-decoration: none;
+}
+.allRightsReserved{
+    margin-top: 0.5vw;
+    font-family: "monserrat";
+    font-size: 0.75vw;
+    font-weight: 400    ;
+    color: white;
+}
+.privacyTerms{
+    display: flex;
+    column-gap: 2vw;
+}
+.bottomLinksRight {
+    display: flex;
+    column-gap: 2vw;
+}
+.bottomLinksRight img {
+    width:3.4vw ;
+    height:3.4vw ;
+}
+.sendMeBackUp  {
+    font-family: "monserrat";
+    font-size: 1.66vw;
+    font-weight: 600;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}

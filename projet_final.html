@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musicfy</title>
+    <link rel="stylesheet" href="projet_final.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="looping.css">
+    <link rel="stylesheet" href="latestDrops.css">
+    <link rel="stylesheet" href="changingText.css">
+    <link rel="stylesheet" href="description.css">
+    <link rel="stylesheet" href="numbers.css">
+    <link rel="stylesheet" href="circles.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="popup.css">
+    <link rel="icon" href="data:,">
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+     <div class="nav">
+        <div class="logo">Musicfy.</div>
+        <div class="links">
+            <div class="navLink"><a  href="projet_final.html">Home</a></div>
+            <div class="navLink"><a  href="artists2.html">Artists</a></div>
+            <div class="navLink"><a  href="Packs.html">Packs</a></div>
+            <div class="navLink"><a  href="Contact.html">Contact</a></div>
+            <div class="navLink"><a id="LoginNavLink" href="Login.html">Account</a></div>
+        </div>
+        <button class="signIn">Sign in</button>
+    </div>
+    <div class="music">
+        <img class="quitSite" src="quitDoor.png">
+        <div class="doYouWantMusic">
+            <div class="question">This site plays music (duh)</div>
+            <div class="answerButtons">
+                <button class="imIn">IM IN !</button>
+                <button class="imNotIn">BE QUIET</button>
+            </div>
+        </div>
+    </div>
+    <div class="topAlternate">
+        <div class="logo">Musicfy.</div>
+    </div>
+    <div class="top">
+        <div class="songContainer">
+            <button id="nextSong" class="nextButton"><img src="nextButton2.png" ></button>
+            <ul class="songList">
+                <img class="firstSong" src="J-Cole.png" alt="J-Cole">
+                <img  src="future-metro-boomin-we-dont-trust-you.png" alt="metro">
+                <img  src="meo87mmxx5fb1.png" alt="travis">
+                <img class="lastSong" src="olivia.png" alt="olivia">
+            </ul>
+            <button id="prevSong" class="prevButton"><img src="prevButton2.png" ></button>
+        </div>
+        <div class="songNameNow">
+            <div class="songNameDiv"></div>
+            <div class="artist"></div>
+        </div>
+        <div class="mute"><button class="muteButton"><img src="volumeOn.png" aria-label="mute" class="soundOn" width="40"><img class="muted" src="mute.png" width="40"></button></div>
+        <div class="audioList">
+            <audio class="audio" src="JCole.mp3"></audio>
+            <audio class="audio" src="Future, Metro Boomin - Like That (Official Audio).mp3"></audio>
+            <audio class="audio" src="Travis Scott - FE!N (Official Audio).mp3"></audio>
+            <audio class="audio" src="Olivia.mp3"></audio>
+        </div>
+    </div>
+    <div class="discount">
+        <section class="loopingList">
+            <div class="loopingItem">
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+            </div>
+            <div class="loopingItem">
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+                <span class="discount50">DISCOUNT 50% OFF</span>
+            </div>
+        </section>
+    </div>
+    <div class="musicClip">
+        <section class="loopingClipList">
+            <div class="clipItem">
+                <span class="loopingArtistName">OLIVIA RODRIGO </span>
+                <span class="loopingSongName">- OBSESSED</span>   
+            </div>
+            <div class="clipItem">
+                <span class="loopingArtistName">OLIVIA RODRIGO </span>
+                <span class="loopingSongName">- OBSESSED</span>   
+            </div>
+            <div class="clipItem">
+                <span class="loopingArtistName">OLIVIA RODRIGO </span>
+                <span class="loopingSongName">- OBSESSED</span>   
+            </div>
+            <div class="clipItem">
+                <span class="loopingArtistName">OLIVIA RODRIGO </span>
+                <span class="loopingSongName">- OBSESSED</span>   
+            </div>
+        </section>
+    </div>
+    <div class="latestDrops">
+        <div class="latestDropsTop">
+            <div class="latestDropsText">LATEST DROPS</div>
+            <button class="viewMoreSongs">View all</button>
+        </div>
+        <div class="latestDropsBorder">
+            <button class="slideNextAlbum"><img src="nextButton2.png"></button>
+            <button class="slidePrevAlbum"><img src="prevButton2.png    "></button>
+            <div class="latestDropsSlider">
+                <div class="Slider" id="album1">
+                    <img class="guts" src="guts.png">
+                    <span class="albumName">GUTS</span>
+                    <span class="artistAlbum">OLIVIA RODRIGO</span>
+                    <button><img class="playAlbumButton" src="albumPlayButton.png"></button>
+                </div>
+                <div class="Slider">
+                    <img class="guts" src="antidote.webp">
+                    <span class="albumName">ANTIDOTE</span>
+                    <span class="artistAlbum">FLETCHER</span>
+                    <button><img class="playAlbumButton" src="albumPlayButton.png"></button>
+                </div>
+                <div class="Slider">
+                    <img class="guts" src="unheard.jfif">
+                    <span class="albumName">UNHEARD</span>
+                    <span class="artistAlbum">HOZIER</span>
+                    <button><img class="playAlbumButton" src="albumPlayButton.png"></button>
+                </div>
+                <div class="Slider">
+                    <img class="guts" src="weDontTrustYou.webp">
+                    <span class="albumName">WE DONT TRUST YOU</span>
+                    <span class="artistAlbum">FUTURE, METRO BOOMIN</span>
+                    <button><img class="playAlbumButton" src="albumPlayButton.png"></button>
+                </div>
+                <div class="Slider">
+                    <img class="guts" src="tos-cover.jpg">
+                    <span class="albumName">THE OFF-SEASON</span>
+                    <span class="artistAlbum">JCOLE</span>
+                    <button><img class="playAlbumButton" src="albumPlayButton.png"></button>
+                </div>
+                <div class="Slider">
+                    <img class="guts" src="Travis Scott - Utopia.webp">
+                    <span class="albumName">UTOPIA</span>
+                    <span class="artistAlbum">TRAVIS SCOTT</span>
+                    <button><img class="playAlbumButton" src="albumPlayButton.png"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="introUs">
+        <div class="who">WHO ARE WE ?<img class="circle" src="circle.png"></div>
+        <div class="changingText"></div>
+        <img class="line" src="line2.png">
+    </div>
+    <div class="description">
+        <img  class="explosion" src="explosion.jpg">
+        <img  class="forallthedogs" src="forallthedogs.png">
+        <img  class="gutsCover" src="do-you-like-the-album-cover-for-guts-v0-trew951l2i8b1.webp">
+        <img  class="weDontTrust" src="weDontTrustYou.webp">
+        <div class="blankCanvas">
+            <p>We are a pioneering streaming service, is set to redefine the industry landscape with its advocacy for fair compensation and artist empowerment. With an intuitive interface and personalized recommendations, Musicfy promises an immersive music experience while championing transparency in revenue distribution. As a beacon for change, Musicfy emerges as a leading force in the evolving realm of digital music consumption.</p>
+        </div>
+    </div>
+    <div class="numbersDiv">
+        <div class="numbersTitle">MUSICFY BY NUMBERS <img class="doubleLine" src="LINE3.png"></div>  
+        <div class="numbersMain">
+                <section class="loopingNumbers">
+                    <div class="numbersItem">
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        </div>
+                        <div class="numbersItem">
+                            <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                            <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                            <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                            <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                            <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                            <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                            <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                            <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                            </div>
+                </section>
+                <div class="numbersStats">
+                    <div class="stats"><div class="number" data-count="1000">+</div><div class="numberText">USERS</div></div>
+                    <div class="stats"><div class="number" data-count="10000">+</div><div class="numberText">SONGS</div></div>
+                    <div class="stats"><div class="number" data-count="100">+</div><div class="numberText"> ARTISTS</div></div>
+                </div>
+                <section class="loopingNumbersI">
+                    <div class="numbersItemI">
+                    <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                    <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                    <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                    <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                    <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                    <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                    <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                    <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                    </div>
+                    <div class="numbersItemI">
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        <span class="checkOutOurStats">CHECKOUT OUR STATS</span>
+                        </div>
+                 </section>
+            </div>
+            
+        </div>
+    </div>
+    <div class="turningCircles">
+        <div class="circle1"><span>OUR</span><span>PACKS</span></div>
+        <div class="circle2"><span>OUR</span><span>ARTISTS</span></div>
+        <div class="circle3"><span>CONTACT</span><span>US</span></div>
+    </div>
+    <div class="footer">
+        <div class="backUpLink">
+            <div class="sendMeBackUp">SEND ME BACK UP</div>
+            <img src="upArrow.png">
+        </div>
+        <div class="restOfFooter">
+            <div class="footerLinks">
+                <a href="projet_final.html">HOME</a>
+                <a href="artists2.html">ARTISTS</a>
+                <a href="Packs.html">PACKS</a>   
+                <a href="Contact.html">CONTACT</a>
+                <a href="Login.html">ACCOUNT</a>
+            </div>
+            <div class="bottomLinks">
+                <div class="leftBottomLinks">
+                    <div class="privacyTerms">
+                        <a href="#">PRIVACY</a>
+                        <a href="#">TERMS AND CONDITIONS</a>
+                    </div>
+                    <div class="allRightsReserved">
+                        @Musicfy STREAMING SERVICE. ALL RIGHTS RESERVED
+                    </div>
+                </div>
+                <div class="bottomLinksRight">
+                    <img src="facebook.png">
+                    <img src="instagram.png">
+                    <img src="linkedin.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="nav.js"></script>
+</body>
+
+<script src="projetfinal.js"></script>
+<script src="looping.js"></script>
+<script src="latestDrops.js"></script>
+<script src="changingText.js"></script>
+<script src="numbers.js"></script>
+<script src="circles.js"></script>
+<script src="footer.js"></script>
+<script src="popup.js"></script>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+</html>

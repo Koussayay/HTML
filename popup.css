@@ -1,0 +1,56 @@
+.doYouWantMusic {
+    z-index: 1;
+    width: 52vw;
+    height: 15.4vw;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3vw;
+    border-radius: 1vw;
+    border:2px solid #FFB547;
+    box-shadow: drop-shadow(1vw 1vw 4vw 5vw rgba(0, 0, 0, 0.5));
+}
+.quitSite {
+    position: absolute;
+    width: 3.4vw;
+    right: 1%;
+    top: 5%;
+
+}
+.music {
+    position: fixed;
+    z-index: 1;
+    top: 40%;
+    left: 25%;
+    opacity: 85%;
+}
+.question {
+    font-family: "monserrat";
+    color: #FFB547;
+    font-size: 1.6vw;
+    font-weight: 900;
+    margin-bottom: 4vw;
+}
+.answerButtons {
+    display: flex;
+    column-gap: 3vw;
+}
+.answerButtons button{
+    background-color: #FFB547;
+    border: 1px solid black;
+    border-radius: 1vw;
+    font-family: "monserrat";
+    color: black;
+    font-size: 1vw;
+    font-weight: 400;
+    width: 12.5vw;
+    height: 3.05vw;
+
+}
+.answerButtons button:hover {
+    cursor: pointer;
+}
+.blurOutsidePopup {
+    filter: blur(5px);
+}

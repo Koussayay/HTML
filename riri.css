@@ -1,0 +1,40 @@
+ul {
+   display: flex;
+   flex-direction: row;
+   gap: 40px;
+
+}
+nav{
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(78, 166, 239);
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size:20px ;
+}
+.nom {
+    display: flex;
+    justify-content: center;
+    font-size: 41px;
+    color: rgb(78, 166, 239);
+}
+body{
+    background-color: beige;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+nav a:hover {
+    color: rgb(210, 15, 244);
+    
+}
+.img {
+    display: flex;
+    justify-content: center;
+}
