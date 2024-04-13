@@ -5,12 +5,11 @@ const signupButton = document.getElementById("signup-button"),
 let quitButton = document.querySelector(".quitSite");
 let manageAccounts = document.querySelector(".manageAccountsButton");
 var windowIndex = JSON.parse(localStorage.getItem("windowIndex")) || ""; ;
-if(windowIndex=="LogIn"){
   document.querySelector(".music").style.display = "none";
   manageAccounts.addEventListener("click",function(){
   document.querySelector(".music").style.display = "block";
 });
-}
+
 
 document.getElementById("container").style.display ="none";
 document.addEventListener("DOMContentLoaded", function() {
@@ -166,11 +165,25 @@ function getUsers() {
     tableBody.appendChild(tr);
   });
 }
+let validUser = true ;
 function updateUser() {
-  users[currentUserIndex].pass = passwordInput.value;
-  users[currentUserIndex].email = emailInput.value;
-  saveData();
-  cancelUpdate();
+  validUser=true;
+  if (!validRegex.test(emailInput.value)) {
+    emailInput.style.borderColor = "red";
+    alert("enter a valid email!");
+    validUser=false;
+  }
+  if (passwordInput.value.length<8) {
+    passwordInput.style.borderColor = "red";
+    alert("password must at least be 8  characters!");
+    validUser=false;
+  }
+  if (validUser==true) {
+    users[currentUserIndex].password = passwordInput.value;
+    users[currentUserIndex].email = emailInput.value;
+    saveData();
+    cancelUpdate();
+  }
 }
   updateBtn.style.display = "none";
   cancelBtn.style.display = "none";
