@@ -1,0 +1,103 @@
+.numbersDiv {
+    margin-top: 20vw;
+}
+.numbersTitle{
+    font-family: "monserrat";
+    color: white;
+    font-weight: 900;
+    font-size: 4.4vw;
+    margin-left: 5vw;
+    position: relative;
+    margin-bottom: 10vw;
+}
+.doubleLine {
+    position: absolute;
+    width: 27vw;
+    top: 45%;
+    right: 41%;
+}
+.loopingNumbers {
+    display: flex;
+    align-items: top;
+    column-gap: 2vw;
+    -webkit-animation: loop 20s infinite linear;
+    animation: loop 120s infinite linear;
+}
+.loopingNumbersI {
+    display: flex;
+    align-items: top;
+    column-gap: 2vw;
+    -webkit-animation: loopI 20s infinite linear;
+    animation: loopI 120s infinite linear;
+}
+@keyframes loop {
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes loopI {
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(100%);
+    }
+  }
+  .checkOutOurStats {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    font-family: 'monserrat';
+    font-size: 1.6vw;
+    font-weight: 700;
+    color: white;
+  }
+  .loopingNumbersI {
+    display: flex;
+    align-items: top;
+    column-gap: 2vw;}
+.numbersItem {
+    display: flex;
+    align-items: top;
+    column-gap: 2vw;
+    -webkit-animation: loop 20s infinite linear;
+    animation: loop 180s infinite linear;
+}
+.numbersItemI { 
+    transform: translateX(-100%);   
+    display: flex;
+    align-items: top;
+    column-gap: 2vw;
+    -webkit-animation: loopI 20s infinite linear;
+    animation: loopI 180s infinite linear;
+}
+.numbersStats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 18.1vw;
+    background-color: #FFB547;
+}
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.number {
+    text-align: center;
+    color: black;
+    font-family: "monserrat";
+    font-size: 4.4vw;
+    font-weight: 900;  
+
+}
+.numberText {
+    text-align: center;
+    color: black;
+    font-family: "monserrat";
+    font-size: 2vw;
+    font-weight: 800; 
+}
+.numbersDiv {
+    margin-bottom: 10vw;
+}

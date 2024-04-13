@@ -1,0 +1,44 @@
+#frame {
+    width: 300px;
+    height:450px;
+    background-color: #161616;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+#screen {
+    background-color: white;
+    margin-top: 25px;
+    height: 70px;
+    width: 250px;
+    border-radius: 10px;
+    align-self: center;
+}
+#boutons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,20%); 
+    justify-content: space-around;
+    grid-template-rows: repeat(5,16%);
+    column-gap: 20px;
+    row-gap: 15px;
+}
+#boutons button {
+    width: 50px;
+    height: 40px;
+    background-color: white;
+    border: black 1px   ;
+    border-radius: 10px;
+}
+body {
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+}
+#screen {
+    text-align: center;
+    font-size: 30px;
+
+}

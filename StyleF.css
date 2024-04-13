@@ -1,0 +1,123 @@
+@font-face {
+    font-family: montserat;
+    src: url(Montserrat-VariableFont_wght.ttf);}
+input {
+    border: none;
+    background-color:#494A4B;
+    tab-size: 200px;
+    box-sizing: border-box;
+    border-bottom:rgb(113, 115, 117) 1px solid;
+    margin-bottom: 20px;
+    margin-right: 200px;
+}
+ul {
+    margin-left: 60px;
+    font-weight: bold;
+    color: #E4236B;
+    font-family: montserat;
+    font-size: 30px;
+    
+    
+}
+.box {
+    border-top: solid 40px rgb(111, 113, 114);
+    background-color: #494A4B;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    height: 350px;
+    width: 700px;
+    align-self: center;
+    margin-top: 200px;
+    gap: 200px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+    
+
+}
+body {
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+.box1 {
+    margin-bottom: 150px;
+    
+}
+h2{
+    font-family: montserat;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: solid 1px rgb(113, 115, 117) ;
+    color: rgb(113, 115, 117);
+    width: 180px;
+}
+input[type="email"] {
+    height: 40px;
+    font-weight: bold;
+    font-size: 15px;
+}
+input[type="number"] {
+    font-size: 15px;
+    height: 40px;
+    font-weight: bold;
+}
+input[type="text"] {
+    font-size: 15px;
+    height: 40px;
+    font-weight: bold;
+}
+::placeholder {
+    color:rgb(113, 115, 117);
+}
+.button {
+margin-left: 65px;
+}
+button {
+    color: #E4236B;
+    font-family: montserat;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    
+}
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 1px;
+  }
+  .row {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    margin-top: 210px;
+    margin-right: 650px;
+    gap: 4px;
+    
+  }
+  h3{
+    color: #494A4B;
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 650px;
+}
+h4{
+    position: absolute;
+    font-family: montserat;
+    margin-top: 490px;
+    font-size: 14px;
+    margin-right: 270px;
+    font-weight: lighter;
+    color: rgb(177, 180, 183)
+
+}
+body{
+   background-color:  #E4236B ;
+
+}

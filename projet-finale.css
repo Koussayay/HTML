@@ -1,0 +1,114 @@
+@font-face {
+    font-family: montserat;
+    src: url(Montserrat-VariableFont_wght.ttf);}
+    body{
+        margin: 0;
+        background-color: #08929d;
+    }
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom:#28384d solid 0.5px ;   
+    position: sticky;
+    top: 0;
+}
+.other {
+display: flex;
+gap: 120px;
+align-self: center;
+margin-right: 150px;
+
+}
+.other a {
+    text-decoration: none;
+    font-size: 32px;
+    font-family: montserat;
+    color: #28384d;
+}
+.main-title h1 {
+    text-align: center;
+    font-family: montserat;
+    font-weight: bold;
+    font-size: 71px;
+    color: white;
+    opacity: 0.75;
+    margin-bottom: 0;
+   
+}
+.main-title p {
+    text-align: center;
+    font-family: montserat;
+    font-weight:normal ;
+    font-size: 38px;
+    color: white;
+    opacity: 0.75;
+    margin-top: 0;
+}
+.main-title {
+    margin-top: 250px;
+}
+.value {
+    text-align: center;
+    font-family: montserat;
+    font-weight:bold ;
+    font-size: 32px;
+    color: white;
+    opacity: 0.75;
+    margin-top: 0;
+    
+
+}
+.changing-value {
+    animation-name: textanimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes textanimation {
+    0%,10% {
+      opacity: 0;
+      }
+    20% , 80% {
+      opacity: 1;
+    }
+    90% , 100% {
+      opacity: 0;
+    }
+
+  }
+.description p{
+    text-align: center;
+    font-family: montserat;
+    font-weight:normal ;
+    font-size: 16px;
+    color: white;
+    opacity: 0.75;
+    width: 700px;
+    
+    
+}
+.description {
+    display: flex;
+    justify-content: center;
+}
+@keyframes stickyp {
+    100%{
+        height: fit-content;
+    }
+}
+.we {
+    display: none;
+    position: absolute;
+    text-align: center;
+    font-family: montserat;
+    font-weight:bold ;
+    font-size: 32px;
+    color: white;
+    opacity: 0.75;
+    margin-top: 300px;
+    margin-bottom: 0;
+}
+.we.show {
+    display: block;
+}
+

@@ -1,0 +1,52 @@
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin: 1px;}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2 , 500px);
+    grid-template-rows: repeat(10,50px);
+    background-color: #494A4B;
+    overflow: hidden;
+}
+.bar{
+grid-column: 1/3;
+display: flex;
+justify-content: space-between;
+}
+.row{
+    display: flex;
+}
+.contacts {
+    grid-row: 9/10;
+    grid-column: 1/2;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    grid-area: 2/2/9/3;
+    justify-content: space-between;
+}
+input {
+    border: none;
+    border-bottom: solid 1px white;
+    background-color: #494A4B;
+    font-size: 25px;
+    font-weight: bold;
+}
+ form h2 {
+    border-bottom:solid 1px white ;
+    color: white;
+}
+.bouton {
+    align-self: flex-end;
+    margin-right: 100px;
+    
+}
+button {
+    color:#E4236B ;
+    background-color: transparent;
+    border: none;
+}
+
